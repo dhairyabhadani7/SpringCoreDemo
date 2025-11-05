@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           https://www.springframework.org/schema/beans/spring-beans.xsd">
+  <!-- Company Bean-->
+  <bean id="companyBean" class="org.example.Company">
+      <property name="companyName" value="Dream Product Based Company"/>
+  </bean>
+
+    <!-- EmployeeService Bean -->
+    <bean id="employeeServiceBean" class="org.example.EmployeeService" scope="singleton" >
+        <!-- Constructor Injection -->
+        <constructor-arg ref="companyBean"/>
+        <constructor-arg ref="departmentBean"/>
+        <!-- Setter Injection -->
+          <property name="employeeName" value="Dhairya Bhadani"/>
+    </bean>
+    <!-- Department Bean -->
+    <bean id="departmentBean" class="org.example.Department" >
+
+        <property name="deptName" value="IT"/>
+        <property name="deptId" value="105"/>
+
+    </bean>
+
+</beans>
