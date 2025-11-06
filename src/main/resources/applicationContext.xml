@@ -8,6 +8,10 @@
   <bean id="companyBean" class="org.example.Company">
       <property name="companyName" value="Dream Product Based Company"/>
   </bean>
+    <bean id="departmentBean" class="org.example.Department" >
+        <property name="deptName" value="IT"/>
+        <property name="deptId" value="105"/>
+    </bean>
 
     <!-- EmployeeService Bean -->
     <bean id="employeeServiceBean" class="org.example.EmployeeService" scope="singleton" >
@@ -18,11 +22,6 @@
           <property name="employeeName" value="Dhairya Bhadani"/>
     </bean>
     <!-- Department Bean -->
-    <bean id="departmentBean" class="org.example.Department" >
 
-        <property name="deptName" value="IT"/>
-        <property name="deptId" value="105"/>
-
-    </bean>
 
 </beans>
