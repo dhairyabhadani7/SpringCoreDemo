@@ -1,22 +1,28 @@
-# Spring Core - Annotation Based Configuration (v2)
+# Spring Core - Annotation-Based Configuration (v2)
 
-This project demonstrates **Spring Core concepts** including IoC (Inversion of Control) and DI (Dependency Injection) using both:
-- 🧱 **XML-based Configuration** (Traditional approach)
-- ⚙️ **Java-based Configuration** using `@Configuration` and `@Bean` (Modern approach)
+This branch demonstrates **Spring Core concepts** implemented using **Annotation-Based Configuration** — the modern approach used in real-world Spring and Spring Boot applications.
 
 ## 🧠 Key Concepts Covered
-- Spring IoC Container
-- Setter & Constructor Injection
-- Bean Scopes (Singleton, Prototype)
-- Multiple Bean Dependencies
-- Java-based Configuration (AppConfig.java)
+- **@Component** – Marks a class as a Spring-managed bean.
+- **@Service**, **@Repository**, **@Controller** – Specialized stereotypes for different layers.
+- **@Autowired** – Enables automatic dependency injection.
+- **@ComponentScan** – Tells Spring where to look for components.
+- **AnnotationConfigApplicationContext** – Used to bootstrap the Spring container without XML.
+
+## ⚙️ Project Overview
+- Eliminates XML configuration entirely.
+- Replaces `AppConfig.java` and `applicationContext.xml` with annotation-driven wiring.
+- Demonstrates dependency injection between `Company`, `Department`, and `EmployeeService` beans.
+- Mimics the foundation of **Spring Boot’s auto-configuration** process.
 
 ## 🧰 Tech Stack
 - Java 21
 - Spring Framework 6+
 - Maven
-- IntelliJ IDEA (Community)
+- IntelliJ IDEA (Community Edition)
 
----
+## 🗂️ Branch Info
+- **main branch:** XML + Java-Based Configuration (v1)
+- **v2-annotation-config:** Annotation-Based Configuration (this branch)
 
-✅ **Next Goal:** Transition to Annotation-based Configuration using `@Component`, `@Autowired`, and `@ComponentScan` (Spring Boot style).
+## 🏁 Output Example
