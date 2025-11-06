@@ -25,4 +25,5 @@ This branch demonstrates **Spring Core concepts** implemented using **Annotation
 - **main branch:** XML + Java-Based Configuration (v1)
 - **v2-annotation-config:** Annotation-Based Configuration (this branch)
 
-## 🏁 Output Example
+
+✅ **Next Step:** Transition this structure into **Spring Boot (v3)** for auto-configuration, REST APIs, and real backend layering.
