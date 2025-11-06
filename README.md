@@ -1,4 +1,4 @@
-# Spring Core - XML & Java Configuration
+# Spring Core - Annotation Based Configuration (v2)
 
 This project demonstrates **Spring Core concepts** including IoC (Inversion of Control) and DI (Dependency Injection) using both:
 - 🧱 **XML-based Configuration** (Traditional approach)
