@@ -1,21 +1,20 @@
 package org.example;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import java.sql.SQLOutput;
 
+@Service
 public class EmployeeService {
-    private String employeeName;
-    private Company company;
-    private Department dept;
+    private String employeeName="Dhairya Bhadani";
+    private final Company company;
+    private final Department dept;
 
-    // Constructor Injection
+    @Autowired
     public EmployeeService(Company company, Department dept) {
         this.company = company;
         this.dept=dept;
-    }
-
-    // Setter Injection for name
-    public void setEmployeeName(String employeeName) {
-        this.employeeName = employeeName;
     }
 
     public void showDetails() {
